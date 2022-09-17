@@ -1,16 +1,14 @@
 import './App.css';
+import './components/Form.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-         Welcome to Genesis! 
-         Login to get Started.
+    
+        <p>Welcome to Genesis!</p>
+         <p> Login to get Started. </p>
          
-        </p>
        
-      </header>
     </div>
   );
 }
