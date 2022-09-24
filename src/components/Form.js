@@ -1,34 +1,20 @@
+import { useState } from 'react';
 import React from 'react';
 // import ReactDOM from 'react-dom';
 
-class Form extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {value: ''};
-  
-      this.handleChange = this.handleChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
-    }
-  
-    handleChange(event) {
-      this.setState({value: event.target.value});
-    }
-  
-    handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.value);
-      event.preventDefault();
-    }
-  
-    render() {
-      return (
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Name:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-      );
-    }
-  }
+function Form() {
+  const [userName, setUserName] = useState("");
+
+  return (
+    <form>
+      <label>UserName:
+        <input type= "text">
+          value={userName}
+          onChange={(e) => setUserName(e.target.value)}
+        </input>
+      </label>
+    </form>
+  )
+}
+
 export default Form;
