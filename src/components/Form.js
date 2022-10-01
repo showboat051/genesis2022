@@ -1,12 +1,16 @@
 import { useState } from 'react';
-import React from 'react';
-// import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM, { render } from 'react-dom';
+// import React, { Component } from 'react';
 
-function Form() {
+
+
+
+function LoginForm() {
   const [userName, setUserName] = useState("");
-
+  
   return (
-    <form>
+    <form className='login'>
       <label>UserName:
         <input type= "text">
           value={userName}
@@ -17,4 +21,7 @@ function Form() {
   )
 }
 
-export default Form;
+
+
+
+export default LoginForm;

@@ -2,8 +2,11 @@ import './App.css';
 import Form from './components/Form.js';
 
 function App() {
-  return (
-    <div className="App">
+
+  render () {
+
+    return (
+      <div className="App">
          
     
         <p>Welcome to Genesis!</p>
@@ -13,6 +16,7 @@ function App() {
          <Form/>
     </div>
   );
-}
+} // end of render
+} //end of function;
 
 export default App;
